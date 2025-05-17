@@ -1,0 +1,65 @@
+.footer{
+    font-family: $font-family-en;
+    padding: 0 3.75rem;
+    background-color: $bgc-light;
+    .container{
+        border-left: .15rem solid $greyForDisable;
+        // border-right: .15rem solid $greyForDisable;
+        .row{
+            .col{
+                display: flex;
+                border-right: .15rem solid $greyForDisable;
+                border-bottom: .15rem solid $greyForDisable;
+                padding: 1.5rem;
+                .sitemap{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    font-family: $font-family-en;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    padding: 1.5rem 0;
+                    li{
+                        &:first-child{
+                            color: $primary-color;
+                            font-weight: bold;
+                        }
+                        a{
+                            color: #000;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                p{
+                    font-family: $font-family-en;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    color: $greyForDisable;
+                }
+                .rectangle{
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: $primary-color;
+                }
+            }
+            .footer-logo{
+                align-items: center;
+            }
+            &:first-child .col{
+                height: 25vh;
+            }
+            &:nth-child(3) .col{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3rem 1.5rem;
+            }
+            &:last-child .col:last-child{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

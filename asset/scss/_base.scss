@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+// typography
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold; 
+    line-height: 1.5; 
+}
+h1{
+    font-size: 8rem; 
+}
+h2{
+    font-size: 6rem; 
+}
+h3{
+    font-size: 3.75rem; 
+}
+h4{
+    font-size: 3rem; 
+}
+h5{
+    font-size: 1.5rem; 
+}
+h6{
+    font-size: 1rem; 
+}
+a{
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+.row{
+    display: flex;
+}
+.col-3{
+    width: 25%;
+}
+.col-6{
+    width: 50%;
+}
+.light-bgc{
+    background: rgba(245,235,221,1);
+    background-image: linear-gradient(#d9d9d9 .15rem, transparent .15rem), linear-gradient(90deg, #d9d9d9 .15rem, transparent .15rem);
+    background-size: 25% 25vh;
+    border: none;
+}
+.shadow4px{
+    box-shadow: .25rem .25rem 0 0 rgba(0,0,0,1);
+}
+.shadow8px{
+    box-shadow: .5rem .5rem 0 0 rgba(0,0,0,1); 
+}
+.shadow16px{
+    box-shadow: 1rem 1rem 0 0 rgba(0,0,0,1); 
+}
