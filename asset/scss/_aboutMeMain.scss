@@ -1,0 +1,125 @@
+.main{
+    background-color: $bgc-light;
+    padding: 0 3.75rem;
+    .container{
+        border-right: .15rem solid $greyForDisable;
+        border-bottom: .15rem solid $greyForDisable;
+        .banner{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 3rem 0;
+            .subtitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .rectangle{
+                    width: 3rem;
+                    height: 3rem;
+                }
+                h5{
+                    font-family: $font-family-en;
+                    color: $primary-color;
+                }
+            }
+            .imgs{
+                padding: 0.5rem;
+                border: .3rem solid $primary-color;
+                img{
+                    width: 22.5rem;
+                    height: 22.5rem;
+                }
+            }
+        }
+        .row{
+            flex-direction: column;
+            gap: 3rem;
+            margin: 0 auto;
+            padding: 3rem 0;
+            .title{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                .icons{
+                    width: 4.5rem;
+                }
+                h4{
+                    font-family: $font-family-en;
+                }
+            }
+            p{
+                font-family: $font-family-en;
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding-left: 3rem;
+                li{
+                    list-style-type: disc;
+                    font-family: $font-family-en;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            padding: 3rem 0;
+            .connect-box{
+                display: flex;
+                flex-direction: column;
+                gap: 2.25rem;
+                border: .3rem solid #000;
+                background-color: $bgc-light;
+                margin: 0 auto;
+                .title{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding: 3rem 3rem 0 3rem;
+                    h5{
+                        font-family: $font-family-en;
+                    }
+                    .icons{
+                        width: 2.25rem;
+                    }
+                }
+                p{
+                    font-family: $font-family-en;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    padding: 0 3rem;
+                }
+                .btns-group{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        width: 33.333333%;
+                        border-right: .3rem solid #000;
+                        .btn{
+                            font-family: $font-family-en;
+                            font-size: 1.5rem;
+                            line-height: 1.5;
+                            font-weight: bold;
+                            color: #000;
+                            text-align: center;
+                            padding: 1rem 1.5rem;
+                            border-top: .3rem solid #000;
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                                color: #fff;
+                                background-color: $primary-color;
+                            }
+                        }
+                        &:last-child{
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
