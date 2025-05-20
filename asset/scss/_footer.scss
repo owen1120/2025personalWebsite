@@ -46,6 +46,10 @@
             }
             .footer-logo{
                 align-items: center;
+                gap: 1rem;
+                img{
+                    width: 3rem;
+                }
             }
             &:first-child .col{
                 height: 25vh;
