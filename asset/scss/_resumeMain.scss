@@ -1,0 +1,163 @@
+.header .container .navi .nav #resume span{
+    opacity: 1;
+}
+.main{
+    background-color: $bgc-light;
+    padding: 0 3.75rem;
+    .container{
+        font-family: $font-family-en;
+        line-height: 1.5;
+        border-right: .15rem solid $greyForDisable;
+        border-bottom: .15rem solid $greyForDisable;
+        .banner{
+            display: flex;
+            gap: 2.25rem;
+            padding: 3rem 0;
+            margin: 0 auto;
+            .imgs{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                img{
+                    width: 100%;
+                    min-width: 12.5rem;
+                }
+                .para{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    text-align: center;
+                }
+            }
+            .title-group{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .title h5{
+                    color: $primary-color;
+                }
+                ul{
+                    margin-left: 1.5rem;
+                    li{
+                        list-style-type: disc;
+
+                    }
+                }
+            }
+        }
+        .eduSkill{
+            padding: 3rem 0;
+            margin: 0 auto;
+            .education{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .edu{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    p:first-child{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .skills{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .skill{
+                    display: flex;
+                    ul{
+                        margin-left: 2rem;
+                        li{
+                            list-style-type: disc;
+                        }
+                    }
+                }
+            }
+        }
+        .work-ex{
+            flex-direction: column;
+            gap: 3rem;
+            padding: 3rem 0;
+            margin: 0 auto;
+            .work{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .subtitle{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    p:last-child{
+                        font-size: 1.5rem;
+                    }
+                }
+                ul{
+                    margin-left: 1.5rem;
+                    li{
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            padding: 3rem 0;
+            .connect-box{
+                display: flex;
+                flex-direction: column;
+                gap: 2.25rem;
+                border: .3rem solid #000;
+                background-color: $bgc-light;
+                margin: 0 auto;
+                .title{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding: 3rem 3rem 0 3rem;
+                    h5{
+                        font-family: $font-family-en;
+                    }
+                    .icons{
+                        width: 2.25rem;
+                    }
+                }
+                p{
+                    font-family: $font-family-en;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    padding: 0 3rem;
+                }
+                .btns-group{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        width: 100%;
+                        border-right: .3rem solid #000;
+                        .btn{
+                            font-family: $font-family-en;
+                            font-size: 1.5rem;
+                            line-height: 1.5;
+                            font-weight: bold;
+                            color: #000;
+                            text-align: center;
+                            padding: 1rem 1.5rem;
+                            border-top: .3rem solid #000;
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                                color: #fff;
+                                background-color: $primary-color;
+                            }
+                        }
+                        &:last-child{
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

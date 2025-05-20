@@ -46,11 +46,24 @@ a{
 .col-8{
     width: 66.66666666666667%;
 }
+.col-9{
+    width: 75%;
+}
 .light-bgc{
     background: rgba(245,235,221,1);
     background-image: linear-gradient(#d9d9d9 .15rem, transparent .15rem), linear-gradient(90deg, #d9d9d9 .15rem, transparent .15rem);
     background-size: 25% 25vh;
     border: none;
+}
+.photo-stream{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* 自動適應，最小寬度 200px */
+    grid-gap: 1.5rem; /* 圖片間距 */
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 .shadow4px{
     box-shadow: .25rem .25rem 0 0 rgba(0,0,0,1);
