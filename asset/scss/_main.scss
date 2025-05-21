@@ -1,9 +1,9 @@
 .home-main{
-    background-color: $bgc-light;
+    background-color: var(--bg-primary);
     padding: 0 3.75rem;
     .container{
-        border-right: .15rem solid $greyForDisable;
-        border-bottom: .15rem solid $greyForDisable;
+        border-right: .15rem solid var(--grid-line-color);
+        border-bottom: .15rem solid var(--grid-line-color);
         .intro{
             font-family: $font-family-en;
             text-align: center;
@@ -22,9 +22,9 @@
                 flex-direction: column;
                 justify-content: space-between;
                 font-family: $font-family-en;
-                border: .3rem solid #000;
+                border: .3rem solid var(--border-color);
                 overflow: hidden;
-                background-color: $bgc-light;
+                background-color: var(--bg-primary);
                 padding: 1.5rem;
                 transition: all .75s ease-in-out;
                 .img-bgc{
@@ -44,13 +44,14 @@
                     display: flex;
                     gap: 1.5rem;
                     font-size: 2.25rem;
-                    color: #000;
+                    color: var(--text-primary);
+                    transition: all 3s ease-in-out;
                     span{
                         display: none;
                         font-size: 1.5rem;
                         line-height: 1.5;
+                        color: var(--text-secondary);
                         text-wrap: nowrap;
-                        transition: all 3s ease-in-out;
                         &:hover{
                             text-decoration: underline;
                         }
@@ -58,8 +59,8 @@
                 }
                 &:hover {
                     flex-grow: 5; /* hover 時增加展開比例 */
-                    border: .3rem solid $primary-color;
-                    box-shadow: .5rem .5rem 0 0 rgba($color: #000000, $alpha: 1.0);
+                    border: .3rem solid var(--border-secondary);
+                    box-shadow: .5rem .5rem 0 0 rgba($color: var(--text-primary), $alpha: 1.0);
                     .img-bgc{
                         top: 50%;
                         left: 50%;
@@ -71,6 +72,73 @@
                             display: inline-block;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1599px){
+    .home-main .container{
+        .intro h4{
+            font-size: 2rem;
+        }
+        .disclosures{
+            padding: 4.5rem 3rem;
+            .dis-item{
+                padding: 1rem;
+                .btn{
+                    align-items: baseline;
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 996px){
+    .home-main{
+        padding: 0;
+        .container .disclosures .dis-item:hover{
+            .btn{
+                i{
+                    display: none;
+                }
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px){
+    .home-main .container{
+        border-right: .1rem solid var(--grid-line-color);
+        border-bottom: none;
+        .intro{
+            padding: 3rem 1.5rem;
+            h4{
+                font-size: 1.25rem;
+            }
+        }
+        .disclosures{
+            flex-direction: column;
+            padding: 1rem;
+            .dis-item{
+                height: auto;
+                flex-direction: row;
+                box-shadow: .5rem .5rem 0 0 var(--shadow-color);
+                .img-bgc{
+                    width: 100%;
+                    height: auto;
+                }
+                .dis-title{
+                    writing-mode: horizontal-tb;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                }
+                &:hover{
+                    height: 25vh;
                 }
             }
         }

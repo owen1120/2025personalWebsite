@@ -11,6 +11,86 @@ $bgc-light: rgba(245,235,221,1);
 $bgc-dark: #282a3f; 
 $bgc-default: #fff; 
 
-// 02 typography
+// typography
 $font-family-en: "IBM Plex Mono", monospace; 
 $font-familt-zh: "Noto Sans TC", sans-serif; 
+
+// 定義淺色模式的顏色變數
+:root {
+  --text-primary: #000000; // 主要文字顏色
+  --text-secondary: #ff5a3f; // 次要文字顏色
+  --text-neutral: #d9d9d9; 
+  --bg-primary: rgba(245,235,221,1); // 主要背景色
+  --bg-secondary: #000000; // 次要背景色 (例如卡片背景)
+  --bg-third: #ff5a3f;
+  --neutral-color: #ffffff;
+  --border-color: #000000; // 邊框顏色
+  --border-secondary: #ff5a3f;
+  --border-neutral: #d9d9d9;
+  --link-color: #000000; // 連結顏色
+  --shadow-color: #000000; // 陰影顏色
+  --highlight-color: #db1f1f; // 亮點顏色 (例如按鈕或 hover 色)
+  --grid-line-color: #d9d9d9; // 淺色模式網格線顏色
+  --grid-bg-color: rgba(245,235,221,1); // 淺色背景主色
+}
+
+// 根據使用者系統偏好設定深色模式的顏色變數
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #ffffff;
+    --text-secondary: #ff5a3f;
+    --text-neutral: #555555; 
+    --bg-primary: #282a3f;
+    --bg-secondary: #ffffff;
+    --bg-third: #ff5a3f;
+    --neutral-color: #000000;
+    --border-color: #02a596;
+    --border-secondary: #ff5a3f;
+    --border-neutral: #555555;
+    --link-color: #ff5a3f;
+    --shadow-color: #ffffff;
+    --highlight-color: #db1f1f;
+    --grid-line-color: #555555; // 深色模式網格線顏色 (調整為深色背景可見的顏色)
+    --grid-bg-color: #282a3f; // 深色模式下網格主色
+  }
+}
+
+// 手動切換時的深色模式 (覆蓋系統偏好)
+// 當 html 元素有 data-theme="dark" 屬性時生效
+html[data-theme='dark'] {
+    --text-primary: #ffffff;
+    --text-secondary: #ff5a3f;
+    --text-neutral: #555555; 
+    --bg-primary: #282a3f;
+    --bg-secondary: #ffffff;
+    --bg-third: #ff5a3f;
+    --neutral-color: #000000;
+    --border-color: #02a596;
+    --border-secondary: #ff5a3f;
+    --border-neutral: #555555;
+    --link-color: #ff5a3f;
+    --shadow-color: #ffffff;
+    --highlight-color: #db1f1f;
+    --grid-line-color: #555555;
+    --grid-bg-color: #282a3f;
+}
+
+// 手動切換時的淺色模式 (覆蓋系統偏好)
+// 當 html 元素有 data-theme="light" 屬性時生效
+html[data-theme='light'] {
+    --text-primary: #000000;
+    --text-secondary: #ff5a3f;
+    --text-neutral: #d9d9d9; 
+    --bg-primary: rgba(245,235,221,1);
+    --bg-secondary: #000000;
+    --bg-third: #ff5a3f;
+    --neutral-color: #ffffff;
+    --border-color: #000000;
+    --border-secondary: #ff5a3f;
+    --border-neutral: #d9d9d9;
+    --link-color: #000000;
+    --shadow-color: #000000;
+    --highlight-color: #db1f1f;
+    --grid-line-color: #d9d9d9;
+    --grid-bg-color: rgba(245,235,221,1);
+}

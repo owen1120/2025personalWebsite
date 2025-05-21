@@ -2,11 +2,11 @@
     opacity: 1;
 }
 .aboutMe-main{
-    background-color: $bgc-light;
+    background-color: var(--bg-primary);
     padding: 0 3.75rem;
     .container{
-        border-right: .15rem solid $greyForDisable;
-        border-bottom: .15rem solid $greyForDisable;
+        border-right: .15rem solid var(--grid-line-color);
+        border-bottom: .15rem solid var(--grid-line-color);
         .banner{
             display: flex;
             justify-content: space-between;
@@ -22,12 +22,12 @@
                 }
                 h5{
                     font-family: $font-family-en;
-                    color: $primary-color;
+                    color: var(--text-secondary);
                 }
             }
             .imgs{
                 padding: 0.5rem;
-                border: .3rem solid $primary-color;
+                border: .3rem solid var(--border-color);
                 img{
                     width: 22.5rem;
                     height: 22.5rem;

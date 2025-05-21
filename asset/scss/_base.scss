@@ -49,9 +49,9 @@ a{
 .col-9{
     width: 75%;
 }
-.light-bgc{
-    background: rgba(245,235,221,1);
-    background-image: linear-gradient(#d9d9d9 .15rem, transparent .15rem), linear-gradient(90deg, #d9d9d9 .15rem, transparent .15rem);
+.grid-line-bg{
+    background: var(--grid-bg-color);
+    background-image: linear-gradient(var(--grid-line-color) .15rem, transparent .15rem), linear-gradient(90deg, var(--grid-line-color) .15rem, transparent .15rem);
     background-size: 25% 25vh;
     border: none;
 }
@@ -66,11 +66,19 @@ a{
     }
 }
 .shadow4px{
-    box-shadow: .25rem .25rem 0 0 rgba(0,0,0,1);
+    box-shadow: .25rem .25rem 0 0 var(--shadow-color);
 }
 .shadow8px{
-    box-shadow: .5rem .5rem 0 0 rgba(0,0,0,1); 
+    box-shadow: .5rem .5rem 0 0 var(--shadow-color); 
 }
 .shadow16px{
-    box-shadow: 1rem 1rem 0 0 rgba(0,0,0,1); 
+    box-shadow: 1rem 1rem 0 0 var(--shadow-color); 
+}
+@media(max-width: 767px){
+    .grid-line-bg{
+    background: var(--grid-bg-color);
+    background-image: linear-gradient(var(--grid-line-color) .1rem, transparent .1rem), linear-gradient(90deg, var(--grid-line-color) .1rem, transparent .1rem);
+    background-size: 50% 25vh;
+    border: none;
+    }
 }
