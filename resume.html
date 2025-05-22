@@ -20,17 +20,38 @@
                 <img src="/asset/images/logo.svg" alt="logo">
                 <h4 class="header-logo">LOGO</h4>
             </div>
-            <ul class="navi">
-                <li class="nav"><a href="/aboutMe.html" class="nav-item" id="aboutMe"><span class="header-hover">「 </span>About Me<span class="header-hover"> 」</span></a></li>
-                <li class="nav"><a href="cv.html" class="nav-item" id="cv"><span class="header-hover">「 </span>CV<span class="header-hover"> 」</span></a></li>
-                <li class="nav"><a href="/resume.html" class="nav-item" id="resume"><span class="header-hover">「 </span>Resume<span class="header-hover"> 」</span></a></li>
-            </ul>
+            <nav>
+                <ul class="navi">
+                    <li class="nav"><a href="/aboutMe.html" class="nav-item" id="aboutMe"><span class="header-hover">「 </span>About Me<span class="header-hover"> 」</span></a></li>
+                    <li class="nav"><a href="/cv.html" class="nav-item" id="cv"><span class="header-hover">「 </span>CV<span class="header-hover"> 」</span></a></li>
+                    <li class="nav"><a href="/resume.html" class="nav-item" id="resume"><span class="header-hover">「 </span>Resume<span class="header-hover"> 」</span></a></li>
+                </ul>
+            </nav>
             <ul class="tranCon">
                 <li class="translate"><a href="#" class="translate-btn"><i class="ri-translate"></i></a></li>
+                <li class="theme-switcher">
+                    <button id="themeToggle" class="theme-toggle-btn">
+                    <i class="ri-moon-fill" data-mode="dark"></i> <i class="ri-sun-fill" data-mode="light" style="display: none;"></i> </button>
+                </li>
                 <li class="contact"><a href="#" class="contact-btn">Contact Me</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="ri-menu-fill hamburger-icon"></i>
+            </button>
         </div>
     </header>
+    <div class="fullscreen-menu">
+        <button class="close-menu" aria-label="Close navigation">&times;</button>
+        <nav class="mobile-nav">
+            <ul>
+                <li class="nav"><a href="/aboutMe.html" class="nav-item" id="aboutMe">About Me</a></li>
+                <li class="nav"><a href="/cv.html" class="nav-item" id="cv">CV</a></li>
+                <li class="nav"><a href="/resume.html" class="nav-item" id="resume">Resume</a></li>
+                <li class="nav"><a href="#">Contact Me</a></li>
+                <li><a href="#"><i class="ri-translate"></i></a></li>
+            </ul>
+        </nav>
+    </div>
     <main class="resume-main">
         <div class="container light-bgc">
             <section class="banner col-8">

@@ -5,6 +5,7 @@
 
 // typography
 h1,h2,h3,h4,h5,h6{
+    color: var(--text-primary);
     font-weight: bold; 
     line-height: 1.5; 
 }
@@ -25,6 +26,9 @@ h5{
 }
 h6{
     font-size: 1rem; 
+}
+p, li{
+    color: var(--text-primary);
 }
 a{
     display: block;
