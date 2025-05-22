@@ -1,10 +1,10 @@
 .detailPage-main{
-    background-color: $bgc-light;
+    background-color: var(--bg-primary);
     padding: 0 3.75rem;
     .container{
         padding: 4.5rem 0;
-        border-right: .15rem solid $greyForDisable;
-        border-bottom: .15rem solid $greyForDisable;
+        border-right: .15rem solid var(--grid-line-color);
+        border-bottom: .15rem solid var(--grid-line-color);
         .title-group{
             display: flex;
             flex-direction: column;
@@ -17,7 +17,7 @@
                 .rectangle{
                     width: 3rem;
                     height: 3rem;
-                    background-color: $primary-color;
+                    background-color: var(--bg-third);
                 }
             }
             .titles{
@@ -39,28 +39,139 @@
                 gap: 1.5rem;
                 font-family: $font-family-en;
                 line-height: 1.5;
-                background-color: $bgc-light;
-                border: .3rem solid #000;
+                background-color: var(--bg-primary);
+                border: .3rem solid var(--border-color);
                 padding: 3rem;
                 margin: 0 auto;
                 h5{
-                    color: $primary-color;
+                    color: var(--text-secondary);
+                }
+                p{
+                    font-size: 1.5rem;
                 }
                 .btn{
                     a{
                         display: inline-block;
-                        color: #fff;
-                        background-color: $primary-color;
+                        color: var(--neutral-color);
+                        background-color: var(--bg-third);
                         border: .3rem solid transparent;
                         padding: 1rem 1.5rem;
                         &:hover{
-                            color: $primary-color;
+                            color: var(--text-secondary);
                             font-weight: bold;
-                            background-color: $bgc-light;
-                            border: .3rem solid $primary-color;
+                            background-color: var(--bg-primary);
+                            border: .3rem solid var(--border-secondary);
                         }
                     }
                 }
+            }
+        }
+        .imgs{
+            border: .3rem solid var(--border-color);
+            padding: 0;
+            margin-bottom: 3rem;
+            img{
+                width: 100%;
+            }
+        }
+        .para{
+            width: 75%;
+            flex-direction: column;
+            gap: 1.5rem;
+            font-family: $font-family-en;
+            line-height: 1.5;
+            margin: 0 auto;
+            .title{
+                font-size: 3rem;
+            }
+            .subtitle{
+                font-size: 1.5rem;
+                color: var(--text-secondary);
+            }
+            .desc{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media(max-width: 1599px){
+    .detailPage-main{
+        .container{
+            .row{
+                .summary{
+                    h5, p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .para{
+                .title{
+                    font-size: 2rem;
+                }
+                .subtitle, .desc{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 996px){
+    .detailPage-main{
+        padding: 0;
+        .container{
+            padding: 0 3rem;
+            .row .summary{
+                padding: 2rem;
+                p{
+                    font-size: 0.875rem;
+                }
+                .btn a{
+                    padding: .5rem 1rem;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px){
+    .detailPage-main .container{
+        border-bottom: none;
+        padding: 1.5rem;
+        .title-group{
+            gap: 1.5rem;
+            .decorate .rectangle{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .titles{
+                .title h4{
+                    font-size: 2rem;
+                }
+                .subtitle h5{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .row{
+            padding-bottom: 3rem;
+            .summary{
+                width: 100%;
+                gap: 1rem;
+                padding: 1.5rem;
+                h5{
+                    font-size: 0.875rem;
+                }
+            }
+        }
+        .para{
+            width: 100%;
+            .title{
+                font-size: 1.5rem;
+            }
+            .subtitle{
+                font-size: 1rem;
+            }
+            .desc{
+                font-size: 0.875rem;
             }
         }
     }

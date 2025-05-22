@@ -85,4 +85,14 @@ a{
     background-size: 50% 25vh;
     border: none;
     }
+    .photo-stream{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); /* 自動適應，最小寬度 200px */
+        grid-gap: 1rem; /* 圖片間距 */
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
 }

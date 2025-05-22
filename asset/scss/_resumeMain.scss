@@ -22,13 +22,15 @@
                 gap: 1rem;
                 img{
                     width: 100%;
-                    min-width: 12.5rem;
                 }
                 .para{
                     display: flex;
                     flex-direction: column;
                     gap: .5rem;
                     text-align: center;
+                    p{
+                        width: 100%;
+                    }
                 }
             }
             .title-group{
@@ -162,5 +164,141 @@
     }
 }
 @media(max-width: 1599px){
-    
+    .resume-main .container{
+        .banner{
+            gap: 1.5rem;
+            .imgs{
+                width: 60%;
+                overflow: hidden;
+                .para{
+                    width: 100%;
+                    font-size: 0.875rem;
+                    text-align: start;
+                    text-wrap: wrap;
+                }
+            }
+            .title-group{
+                .title{
+                    h4{
+                        font-size: 2rem;
+                    }
+                    h5{
+                        font-size: 1rem;
+                    }
+                }
+                ul{
+                    font-size: 0.875rem;
+                }
+            }
+        }
+        .content .connect-box{
+            gap: 1.5rem;
+            .title{
+                padding: 1.5rem 1.5rem 0 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+                padding: 0 1.5rem;
+            }
+            .btns-group li .btn{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media(max-width: 996px){
+    .resume-main{
+        padding: 0;
+        .container{
+            padding: 0 3rem;
+            .banner, .row{
+                width: 100%;
+            }
+            .banner .imgs{
+                width: 40%;
+            }
+            .content .connect-box{
+                width: 80%;
+            }
+        }
+    }
+}
+@media(max-width: 767px){
+    .resume-main .container{
+        border-bottom: none;
+        padding: 1.5rem;
+        .banner{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+            .imgs{
+                width: 70%;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                }
+                .para p{
+                    font-size: 0.875rem;
+                    text-align: center;
+                }
+            }
+        }
+        .work-ex{
+            gap: 3rem;
+            padding: 1.5rem 0rem;
+            .title{
+                font-size: 2rem;
+            }
+            .work{
+                .title{
+                    font-size: 1.5rem;
+                }
+                .subtitle{
+                    p{
+                        font-size: 0.875rem;
+                        &:last-child{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                ul{
+                    font-size: 0.875rem;
+                }
+            }
+        }
+        .eduSkill{
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .content{
+            padding: 1rem 0;
+            .connect-box{
+                gap: 1rem;
+                .title{
+                    gap: 0.5rem;
+                    h5{
+                        font-size: 1rem;
+                    }
+                    .icons{
+                        width: 1.5rem;
+                    }
+                }
+                p{
+                    font-size: 0.875rem;
+                    text-wrap: balance;
+                }
+                .btns-group{
+                    flex-direction: column;
+                    li{
+                        width: 100%;
+                        border-right: 0;
+                        .btn{
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -56,8 +56,8 @@
             }
             &:nth-child(3) .col{
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
+                gap: 1rem;
                 padding: 3rem 1.5rem;
             }
             &:last-child .col:last-child{
