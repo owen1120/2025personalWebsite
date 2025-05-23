@@ -5,7 +5,6 @@
     background-color: var(--bg-primary);
     padding: 0 3.75rem;
     .container{
-        font-family: $font-family-en;
         line-height: 1.5;
         border-right: .15rem solid var(--grid-line-color);
         border-bottom: .15rem solid var(--grid-line-color);
@@ -119,15 +118,11 @@
                     align-items: center;
                     gap: 1.5rem;
                     padding: 3rem 3rem 0 3rem;
-                    h5{
-                        font-family: $font-family-en;
-                    }
                     .icons{
                         width: 2.25rem;
                     }
                 }
                 p{
-                    font-family: $font-family-en;
                     font-size: 1.5rem;
                     line-height: 1.5;
                     padding: 0 3rem;
@@ -139,7 +134,6 @@
                         width: 100%;
                         border-right: .3rem solid var(--border-color);
                         .btn{
-                            font-family: $font-family-en;
                             font-size: 1.5rem;
                             line-height: 1.5;
                             font-weight: bold;

@@ -13,7 +13,8 @@
 
 // typography
 $font-family-en: "IBM Plex Mono", monospace; 
-$font-familt-zh: "Noto Sans TC", sans-serif; 
+$font-family-zh: "Noto Sans TC", sans-serif; 
+$font-family-combined: $font-family-en, $font-family-zh;
 
 // 定義淺色模式的顏色變數
 :root {

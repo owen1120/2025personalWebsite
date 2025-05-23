@@ -16,7 +16,6 @@
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
-                font-family: $font-family-en;
                 h5{
                     color: var(--text-secondary);
                 }
@@ -49,15 +48,11 @@
                         width: 4.5rem;
                     }
                 }
-                h4{
-                    font-family: $font-family-en;
-                }
             }
             .works{
                 display: flex;
                 flex-direction: column;
                 gap: 1.5rem;
-                font-family: $font-family-en;
                 line-height: 1.5;
                 .title{
                     display: flex;
@@ -81,7 +76,6 @@
                 }
             }
             p,ul{
-                font-family: $font-family-en;
                 font-size: 1.5rem;
                 line-height: 1.5;
             }
@@ -128,15 +122,11 @@
                     align-items: center;
                     gap: 1.5rem;
                     padding: 3rem 3rem 0 3rem;
-                    h5{
-                        font-family: $font-family-en;
-                    }
                     .icons{
                         width: 2.25rem;
                     }
                 }
                 p{
-                    font-family: $font-family-en;
                     font-size: 1.5rem;
                     line-height: 1.5;
                     padding: 0 3rem;
@@ -148,7 +138,6 @@
                         width: 100%;
                         border-right: .3rem solid var(--border-color);
                         .btn{
-                            font-family: $font-family-en;
                             font-size: 1.5rem;
                             line-height: 1.5;
                             font-weight: bold;

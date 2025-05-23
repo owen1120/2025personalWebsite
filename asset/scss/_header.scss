@@ -7,7 +7,6 @@
     .container{
         display: flex;
         align-items: center;
-        font-family: $font-family-en;
         .header-logo{
             width: 25%;
             display: flex;
@@ -152,7 +151,6 @@
         border: .3rem solid var(--border-color);
         a {
           color: var(--text-primary);
-          font-family: $font-family-en;
           text-decoration: none;
           font-size: 1.5rem;
           padding: 1rem 1.5rem;

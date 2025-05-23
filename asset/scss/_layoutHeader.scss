@@ -31,7 +31,6 @@
         }
         .para{
             width: 50%;
-            font-family: $font-family-en;
             line-height: 1.5;
             text-align: center;
             li .col-8{
@@ -47,7 +46,6 @@
         z-index: 2;
         display: flex;
         align-items: center;
-        font-family: $font-family-en;
         background-color: var(--bg-primary);
         padding: 1rem 3.75rem;
         margin: 0 auto;
@@ -196,7 +194,6 @@
         border: .3rem solid var(--border-color);
         a {
           color: var(--text-primary);
-          font-family: $font-family-en;
           text-decoration: none;
           font-size: 1.5rem;
           padding: 1rem 1.5rem;
