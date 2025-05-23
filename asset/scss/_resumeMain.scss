@@ -2,13 +2,13 @@
     opacity: 1;
 }
 .resume-main{
-    background-color: $bgc-light;
+    background-color: var(--bg-primary);
     padding: 0 3.75rem;
     .container{
         font-family: $font-family-en;
         line-height: 1.5;
-        border-right: .15rem solid $greyForDisable;
-        border-bottom: .15rem solid $greyForDisable;
+        border-right: .15rem solid var(--grid-line-color);
+        border-bottom: .15rem solid var(--grid-line-color);
         .banner{
             display: flex;
             gap: 2.25rem;
@@ -38,13 +38,12 @@
                 flex-direction: column;
                 gap: 1.5rem;
                 .title h5{
-                    color: $primary-color;
+                    color: var(--text-secondary);
                 }
                 ul{
                     margin-left: 1.5rem;
                     li{
                         list-style-type: disc;
-
                     }
                 }
             }
@@ -112,8 +111,8 @@
                 display: flex;
                 flex-direction: column;
                 gap: 2.25rem;
-                border: .3rem solid #000;
-                background-color: $bgc-light;
+                border: .3rem solid var(--border-color);
+                background-color: var(--bg-primary);
                 margin: 0 auto;
                 .title{
                     display: flex;
@@ -138,20 +137,20 @@
                     justify-content: space-between;
                     li{
                         width: 100%;
-                        border-right: .3rem solid #000;
+                        border-right: .3rem solid var(--border-color);
                         .btn{
                             font-family: $font-family-en;
                             font-size: 1.5rem;
                             line-height: 1.5;
                             font-weight: bold;
-                            color: #000;
+                            color: var(--text-primary);
                             text-align: center;
                             padding: 1rem 1.5rem;
-                            border-top: .3rem solid #000;
+                            border-top: .3rem solid var(--border-color);
                             transition: all .3s ease-in-out;
                             &:hover{
-                                color: #fff;
-                                background-color: $primary-color;
+                                color: var(--neutral-color);
+                                background-color: var(--bg-third);
                             }
                         }
                         &:last-child{
