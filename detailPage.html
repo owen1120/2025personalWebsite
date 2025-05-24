@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Single</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
@@ -11,6 +11,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/detailPages.css">
 </head>
 <body>
@@ -33,7 +34,7 @@
                     <button id="themeToggle" class="theme-toggle-btn">
                     <i class="ri-moon-fill" data-mode="dark"></i> <i class="ri-sun-fill" data-mode="light" style="display: none;"></i> </button>
                 </li>
-                <li class="contact"><a href="#" class="contact-btn">Contact Me</a></li>
+                <li class="contact"><a href="/contact.html" class="contact-btn">Contact Me</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <i class="ri-menu-fill hamburger-icon"></i>
@@ -47,14 +48,14 @@
                 <li class="nav"><a href="/aboutMe.html" class="nav-item" id="aboutMe">About Me</a></li>
                 <li class="nav"><a href="/cv.html" class="nav-item" id="cv">CV</a></li>
                 <li class="nav"><a href="/resume.html" class="nav-item" id="resume">Resume</a></li>
-                <li class="nav"><a href="#">Contact Me</a></li>
+                <li class="nav"><a href="/contact.html">Contact Me</a></li>
                 <li><a href="#"><i class="ri-translate"></i></a></li>
             </ul>
         </nav>
     </div>
     <main class="detailPage-main">
         <div class="container grid-line-bg">
-            <section class="title-group">
+            <section class="title-group" data-aos="fade-up">
                 <div class="decorate">
                     <div class="rectangle"></div>
                     <div class="rectangle"></div>
@@ -74,7 +75,7 @@
                     <div class="rectangle"></div>
                 </div>
             </section>
-            <section class="row">
+            <section class="row" data-aos="fade-up">
                 <div class="summary col-9 shadow8px">
                     <h5>title</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione unde, enim facilis perspiciatis modi qui incidunt? Amet aliquid sapiente quia harum odio neque facere, nobis veniam optio voluptatum quasi! <br>Repellat rerum quod enim eaque tempore minus inventore porro hic odit dicta mollitia fuga, perferendis vel facere, saepe exercitationem officiis nemo aspernatur ad aut. <br>Dignissimos libero quod fugit aliquid harum.
@@ -84,10 +85,10 @@
                     </div>
                 </div>
             </section>
-            <section class="row imgs">
+            <section class="row imgs" data-aos="fade-up">
                 <img src="https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
             </section>
-            <section class="row photo-stream">
+            <section class="row photo-stream" data-aos="fade-up">
                 <img src="https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
                 <img src="https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
                 <img src="https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
@@ -95,20 +96,20 @@
                 <img src="https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
                 <img src="https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
             </section>
-            <div class="row para">
+            <section class="row para" data-aos="fade-up">
                 <h4 class="title">Lorem ipsum dolor</h4>
                 <h5 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                 <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque quisquam nisi expedita ipsum doloribus reiciendis animi, minus ducimus autem exercitationem earum recusandae, ad, culpa ab rem ullam odio tenetur.</p>
-            </div>
-            <div class="row para">
+            </section>
+            <section class="row para" data-aos="fade-up">
                 <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit ipsam voluptatem similique tempore vitae! Nam doloribus itaque sit quas sequi quo, perferendis placeat officiis vitae numquam cum ducimus illum consectetur.</p>
                 <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit ipsam voluptatem similique tempore vitae! Nam doloribus itaque sit quas sequi quo, perferendis placeat officiis vitae numquam cum ducimus illum consectetur.</p>
-            </div>
+            </section>
         </div>
     </main>
     <footer class="footer detailPage-footer">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col col-3 footer-logo">
                     <img src="/asset/images/logo.svg" alt="logo">
                     <h4>LOGO</h4>
@@ -116,7 +117,7 @@
                 <div class="col col-6"></div>
                 <div class="col col-3"></div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col col-3"></div>
                 <div class="col col-3">
                     <ul class="sitemap">
@@ -128,7 +129,7 @@
                 <div class="col col-3">
                     <ul class="sitemap">
                         <li>Works</li>
-                        <li><a href="/industrial.html">Category</a></li>
+                        <li><a href="/layoutPage.html">Category</a></li>
                         <li><a href="#">Category</a></li>
                         <li><a href="#">Category</a></li>
                         <li><a href="#">Category</a></li>
@@ -141,11 +142,11 @@
                         <li>Contact</li>
                         <li><a href="/cv.html">CV</a></li>
                         <li><a href="/resume.html">Resume</a></li>
-                        <li><a href="#">Email</a></li>
+                        <li><a href="/contact.html">Email</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col col-6">
                     <p>© 2025</p>
                     <p>All rights reserved by Owen He.</p>
@@ -167,5 +168,28 @@
     </footer>
     <script src="/asset/js/menu.js"></script>
     <script src="/asset/js/mode.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        // ─── 全域設定 ───
+        disable: false,                // 何時停用 AOS：可填 'phone' / 'tablet' / 'mobile'，或直接給布林值、表達式、函式
+        startEvent: 'DOMContentLoaded',// AOS 什麼事件被觸發時才開始初始化
+        initClassName: 'aos-init',     // 元素在初始化完成後會先加上的類名
+        animatedClassName: 'aos-animate', // 動畫正式啟動時套用的類名
+        useClassNames: false,          // 若設為 true，會把 `data-aos` 的值做為類名，在滾動時一併加上
+        disableMutationObserver: false,// 是否關閉 MutationObserver 自動偵測 DOM 變動（進階）
+        debounceDelay: 50,             // 視窗尺寸改變時的 debounce 間隔（毫秒）
+        throttleDelay: 99,             // 滾動事件的 throttle 間隔（毫秒）
+
+        // ─── 可用 `data-aos-*` 覆寫的項目 ───
+        offset: 120,                   // 觸發動畫時，元素與視窗的距離（px）
+        delay: 0,                      // 動畫延遲 0–3000 ms，步進 50 ms
+        duration: 400,                 // 動畫時長 0–3000 ms，步進 50 ms
+        easing: 'ease',                // 動畫預設 easing 函式
+        once: false,                   // true 表示動畫只在第一次向下滾動時播放
+        mirror: false,                 // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
+        anchorPlacement: 'top-bottom', // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
+        });
+    </script>
 </body>
 </html>
