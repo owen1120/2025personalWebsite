@@ -5,6 +5,10 @@
         padding: 4.5rem 0;
         border-right: .15rem solid var(--grid-line-color);
         border-bottom: .15rem solid var(--grid-line-color);
+        section{
+            width: 70%;
+            margin: 0 auto;
+        }
         .title-group{
             display: flex;
             flex-direction: column;
@@ -24,7 +28,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1.5rem;
-                .title, .subtitle{
+                .title{
                     display: flex;
                     justify-content: space-between;
                 }
@@ -46,6 +50,9 @@
                 }
                 p{
                     font-size: 1.5rem;
+                    span{
+                        font-weight: bold;
+                    }
                 }
                 .btn{
                     a{
@@ -63,10 +70,26 @@
                     }
                 }
             }
+            .btn{
+                margin: 0 auto;
+                a{
+                    display: inline-block;
+                    color: var(--neutral-color);
+                    background-color: var(--bg-third);
+                    border: .3rem solid transparent;
+                    padding: 1rem 1.5rem;
+                    &:hover{
+                        color: var(--text-secondary);
+                        font-weight: bold;
+                        background-color: var(--bg-primary);
+                        border: .3rem solid var(--border-secondary);
+                    }
+                }
+            }
         }
         .imgs{
             border: .3rem solid var(--border-color);
-            padding: 0;
+            padding-bottom: 0;
             margin-bottom: 3rem;
             img{
                 width: 100%;
@@ -133,6 +156,9 @@
     .detailPage-main .container{
         border-bottom: none;
         padding: 1.5rem;
+        section{
+            width: 100%;
+        }
         .title-group{
             gap: 1.5rem;
             .decorate .rectangle{
@@ -170,6 +196,9 @@
             .desc{
                 font-size: 0.875rem;
             }
+        }
+        .imgs{
+            padding-bottom: 0;
         }
     }
 }
