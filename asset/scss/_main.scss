@@ -4,9 +4,14 @@
     .container{
         border-right: .15rem solid var(--grid-line-color);
         border-bottom: .15rem solid var(--grid-line-color);
+        .banner{
+            padding: 4.5rem;
+            h4:first-of-type{
+                color: var(--text-secondary);
+            }
+        }
         .intro{
-            text-align: center;
-            padding: 4.5rem 3rem 0 3rem;
+            padding: 4.5rem;
         }
         .disclosures{
             display: flex;
@@ -60,9 +65,9 @@
                 &:hover {
                     flex-grow: 5; /* hover 時增加展開比例 */
                     border: .3rem solid var(--border-secondary);
-                    box-shadow: .5rem .5rem 0 0 rgba($color: var(--text-primary), $alpha: 1.0);
+                    box-shadow: .5rem .5rem 0 0 rgba($color: var(--shadow-color), $alpha: 1.0);
                     .img-bgc{
-                        height: 100%;
+                        width: 100%;
                         opacity: 0.6;
                     }
                     .btn{
@@ -77,6 +82,14 @@
 }
 @media(max-width: 1599px){
     .home-main .container{
+        .banner{
+            h1{
+                font-size: 5rem;
+            }
+            h4{
+                font-size: 2rem;
+            }
+        }
         .intro h4{
             font-size: 2rem;
         }
@@ -113,6 +126,15 @@
     .home-main .container{
         border-right: .1rem solid var(--grid-line-color);
         border-bottom: none;
+        .banner{
+            padding: 3rem 1.5rem;
+            h1{
+                font-size: 3rem;
+            }
+            h4{
+                font-size: 1.25rem;
+            }
+        }
         .intro{
             padding: 3rem 1.5rem;
             h4{

@@ -10,19 +10,22 @@
         .banner{
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             margin: 0 auto;
             padding: 3rem 0;
             .subtitle{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                .rectangle{
-                    width: 3rem;
-                    height: 3rem;
-                    background-color: var(--bg-third);
-                }
-                h5{
-                    color: var(--text-secondary);
+                .position{
+                    line-height: 1.5;
+                    padding: 1rem;
+                    h5{
+                        color: var(--text-secondary);
+                    }
+                    p:first-of-type{
+                        font-weight: bold;
+                    }
                 }
             }
             .imgs{
@@ -60,6 +63,9 @@
                     list-style-type: disc;
                     font-size: 1.5rem;
                     line-height: 1.5;
+                    span{
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -119,6 +125,8 @@
 @media(max-width: 1599px){
     .aboutMe-main .container{
         .banner{
+            flex-direction: column-reverse;
+            gap: 1.5rem;
             .imgs img{
                 width: 15rem;
                 height: 15rem;
@@ -184,7 +192,6 @@
                 }
                 h5{
                     font-size: 1rem;
-                    text-align: center;
                 }
             }
             .imgs{
