@@ -1,4 +1,22 @@
 .layout-main .container .row{
+    // industrial
+    .flashlight .card .card-body{
+        background-image: url(/asset/images/flashlight.jpg);
+    }
+    .dryveler .card .card-body{
+        background-image: url(/asset/images/dryveler.jpg);
+    }
+    .road-composition-drone .card .card-body{
+        background-image: url(/asset/images/road-composition-drone.jpg);
+    }
+    .golden-extraction .card .card-body{
+        background-image: url(/asset/images/golden-extraction.jpg);
+    }
+    .transtyle .card .card-body{
+        background-image: url(/asset/images/transtyle.jpg);
+    }
+
+    // ui/ux
     .mullet-roe-brand-website .card .card-body{
         background-image: url(/asset/images/mullet-roe-brand-website.jpg);
     }
