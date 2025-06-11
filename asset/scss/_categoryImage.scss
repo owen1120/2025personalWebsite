@@ -1,43 +1,72 @@
 .layout-main .container .row{
     // industrial
     .unstable-cement .card .card-body{
-        background-image: url(/asset/images/unstable-cement.jpg);
+        background-image: url(/asset/images/industrial/unstable-cement.jpg);
     }
     .flashlight .card .card-body{
-        background-image: url(/asset/images/flashlight.jpg);
+        background-image: url(/asset/images/industrial/flashlight.jpg);
     }
     .dryveler .card .card-body{
-        background-image: url(/asset/images/dryveler.jpg);
+        background-image: url(/asset/images/industrial/dryveler.jpg);
     }
     .road-composition-drone .card .card-body{
-        background-image: url(/asset/images/road-composition-drone.jpg);
+        background-image: url(/asset/images/industrial/road-composition-drone.jpg);
     }
     .golden-extraction .card .card-body{
-        background-image: url(/asset/images/golden-extraction.jpg);
+        background-image: url(/asset/images/industrial/golden-extraction.jpg);
     }
     .transtyle .card .card-body{
-        background-image: url(/asset/images/transtyle.jpg);
+        background-image: url(/asset/images/industrial/transtyle.jpg);
     }
 
     // ui/ux
+    .foothow-app .card .card-body{
+        background-image: url(/asset/images/uiux/foothow-app.jpg);
+    }
     .mullet-roe-brand-website .card .card-body{
-        background-image: url(/asset/images/mullet-roe-brand-website.jpg);
+        background-image: url(/asset/images/uiux/mullet-roe-brand-website.jpg);
     }
     .mose .card .card-body{
-        background-image: url(/asset/images/mose.jpg);
+        background-image: url(/asset/images/uiux/mose.jpg);
+    }
+
+    // 3d rendering
+    .sony-dsc-v1 .card .card-body{
+        background-image: url(/asset/images/rendering/sony-dsc-v1.jpg);
+    }
+    .charger .card .card-body{
+        background-image: url(/asset/images/rendering/charger.jpg);
+    }
+    .soladrone .card .card-body{
+        background-image: url(/asset/images/rendering/soladrone.jpg);
+    }
+    .candle-light-alarm-clock .card .card-body{
+        background-image: url(/asset/images/rendering/candle-light-alarm-clock.jpg);
+    }
+    .stream-deck .card .card-body{
+        background-image: url(/asset/images/rendering/stream-deck.jpg);
+    }
+    .cosmetic .card .card-body{
+        background-image: url(/asset/images/rendering/cosmetic.jpg);
     }
 
     // graphic
+    .pas-exhibition-backboard .card .card-body{
+        background-image: url(/asset/images/graphic/plasma-agriculture-system-exhibition-backboard.jpg);
+    }
+    .desk-calendar-2024 .card .card-body{
+        background-image: url(/asset/images/graphic/desk-calendar-2024.jpg);
+    }
     .the-beauty-of-thau-arts-and-humanities .card .card-body{
-        background-image: url(/asset/images/the-beauty-of-thau-arts-and-humanities.jpg);
+        background-image: url(/asset/images/graphic/the-beauty-of-thau-arts-and-humanities.jpg);
     }
     .medical-publication-poster .card .card-body{
-        background-image: url(/asset/images/medical-publication-poster.jpg);
+        background-image: url(/asset/images/graphic/medical-publication-poster.jpg);
     }
     .desk-calendar-2022 .card .card-body{
-        background-image: url(/asset/images/desk-calendar-2022.jpg);
+        background-image: url(/asset/images/graphic/desk-calendar-2022.jpg);
     }
     .leader-extrusion-machinery-dm .card .card-body{
-        background-image: url(/asset/images/leader-extrusion-machinery-dm.jpg);
+        background-image: url(/asset/images/graphic/leader-extrusion-machinery-dm.jpg);
     }
 }
