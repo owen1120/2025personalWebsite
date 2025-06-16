@@ -17,7 +17,7 @@
             white-space: nowrap;
             padding: 3rem 0;
             padding-left: 100%;
-            animation: marquee-scroll 45s linear infinite;
+            animation: marquee-scroll 100s linear infinite;
             &:hover{
                 animation-play-state: paused;
             }

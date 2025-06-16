@@ -37,6 +37,9 @@
     }
 
     // 3d rendering
+    .jewelry-box .card .card-body{
+        background-image: url(/asset/images/rendering/jewelry-box.jpg);
+    }
     .sony-dsc-v1 .card .card-body{
         background-image: url(/asset/images/rendering/sony-dsc-v1.jpg);
     }
@@ -54,6 +57,17 @@
     }
     .cosmetic .card .card-body{
         background-image: url(/asset/images/rendering/cosmetic.jpg);
+    }
+
+    // barnding
+    .gyokinnshou .card .card-body{
+        background-image: url(/asset/images/branding/gyokinnshou.jpg);
+    }
+    .west-lake-resortopia .card .card-body{
+        background-image: url(/asset/images/branding/west-lake-resortopia.jpg);
+    }
+    .quan-yi-tong .card .card-body{
+        background-image: url(/asset/images/branding/quan-yi-tong.jpg);
     }
 
     // graphic
