@@ -122,9 +122,25 @@
         .row{
             width: 100%;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 1.5rem;
             .cards{
-                width: 100%;
+                flex-basis: calc((100% - (2 * 1.5rem)) / 2);
+                flex-grow: 1;
+                flex-shrink: 1;
+                .card{
+                    .card-header{
+                        height: auto;
+                        padding: 0.5rem;
+                        h5{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .card-footer{
+                        padding: 0.5rem;
+                    }
+                }
             }
         }
     }
